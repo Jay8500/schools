@@ -10,7 +10,8 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "make-exe": "ng build --configuration desktop && electron-builder"
+    "make-exe": "ng build --configuration desktop && electron-builder",
+    "jay": "ng build && git add . && git commit -m \"Latest spread app update\" && git push origin main"
   },
   "prettier": {
     "printWidth": 100,
