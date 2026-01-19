@@ -1,4 +1,4 @@
-const { app, BrowserWindow } = require('electron');
+const { app, BrowserWindow,Menu } = require('electron');
 const path = require('path');
 
 let win;
@@ -12,7 +12,7 @@ function createWindow() {
       contextIsolation: false
     }
   });
-
+ Menu.setApplicationMenu(null);
   // Points to the built Angular files in the 'dist' folder
   win.loadFile(path.join(__dirname, 'dist/schdesktop/browser/index.html'));
 
